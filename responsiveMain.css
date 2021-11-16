@@ -1,0 +1,21 @@
+@media screen and (max-width: 576px) {
+  .rightHeader{
+    background-color: black;
+    padding-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .iconRight{
+    margin-left: 25%;
+    margin-bottom: 5%;
+  }
+  .profileContent_2,
+  .profileContent_3,
+  .profileContent_4 {
+  margin-left: 30%;
+}
+.profileContent_4{
+  padding-bottom: 20%;
+}
+}

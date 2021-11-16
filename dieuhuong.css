@@ -1,0 +1,47 @@
+
+#header-right {
+    font-size: 13px;
+    padding: 5px 5px 0 5px;
+    background-color:orangered;
+    height: 30px;
+    font-weight: bold;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+
+}
+
+#header-right a{
+   display:flexbox;   
+   color: blanchedalmond;       
+   float: right;
+   padding: 0 5px;
+}
+#header-right a:hover{
+
+    color:orange;    
+    text-decoration: none;
+}
+
+.thanhdieuhuong2{
+    float: right;
+    display: flex;
+    justify-content: right;
+}
+
+.thanhdieuhuong2 nav a{
+padding: 10px;                  /*10+20=30*/
+font-size: 20px;
+font-weight: bold;
+color: palevioletred;
+font-family:monospace;
+text-decoration: none;
+display: inline-block;
+}
+.thanhdieuhuong2 nav a:hover{
+    font-size: 24px;            /*24+6=30*/
+    padding: 6px;
+    background-color: palevioletred;
+    color: white; 
+}
+
+

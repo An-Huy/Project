@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Red+Hat+Mono:wght@500&family=Zen+Kurenaido&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.backgroundHeader {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(background.jpeg);
+  background-position: center;
+}
+
+.headerBoder {
+  position: relative;
+  border: 10px solid #ffa34d;
+  width: 214px;
+  height: 361px;
+  margin-top: 40%;
+  margin-left: 60%;
+  margin-bottom: 60%;
+}
+
+.headerTitle {
+  position: absolute;
+  color: #ffffff;
+  position: relative;
+  width: 600px;
+  font-size: 50px;
+  font-weight: 700;
+  left: -30%;
+  padding-top: 15%;
+  font-family: "Red Hat Mono", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.rightHeader {
+  padding-top: 10%;
+  padding-left: 25%;
+}
+
+.slogan__1 {
+  color: #ffffff;
+  font-size: 35px;
+  font: 40px/1.2 "Zen Kurenaido", sans-serif;
+  font-weight: 600;
+}
+
+.buttonHeader_1 {
+  display: inline-block;
+  padding: 13px 10px;
+  color: #fff;
+  position: relative;
+  border: 3px solid #ffa34d;
+  font: 16px/1.2 "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 10%;
+}
+.buttonHeader_2 {
+  display: inline-block;
+  padding: 13px 10px;
+  color: #fff;
+  position: relative;
+  border: 3px solid #ffa34d;
+  font: 16px/1.2 "Oswald", sans-serif;
+  letter-spacing: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 10%;
+}
+
+.buttonHeader_1:hover {
+  color: #ffa34d;
+}
+
+.buttonHeader_2:hover {
+  color: #ffa34d;
+}
+
+.backgroundMain__1 {
+  background-color: black;
+}
+
+.lfm2 {
+  width: 100%;
+  height: 30%;
+  margin: 0 0 5% 0;
+}
+
+.lfm1 {
+  width: 100%;
+  height: 30%;
+  margin: 30% 0 5% 0;
+}
+
+.rtm {
+  width: 80%;
+  height: 63%;
+  margin: 30% 0 5% 0;
+}
+
+.leftContent {
+  position: relative;
+  margin: 10% 0 5% 5%;
+}
+
+.leftContent__1 {
+  color: #ffffff;
+  width: 80%;
+  font-family: "Red Hat Mono", sans-serif;
+  font-size: 35px;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  font-weight: bold;
+}
+
+.leftContent__2 {
+  width: 85%;
+  border-bottom: 3.5px solid #ffffff;
+  color: #ffffff;
+  padding-bottom: 10%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.leftContent__3 {
+  width: 85%;
+  border-left: 10px solid #ffa34d;
+  padding: 5px 0 5px 10px;
+  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.backgroundMain__2 {
+  background-color: #f2f2f2;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.icon__1,
+.icon__2,
+.icon__3,
+.icon__4,
+.icon__5,
+.icon__6 {
+  font-size: 80px;
+  color: #ffa34d;
+}
+
+.icon__1,
+.icon__3,
+.icon__5 {
+  padding-bottom: 8%;
+}
+
+.icon__2,
+.icon__4,
+.icon__6 {
+  margin-top: 10%;
+}
+
+.iconLeft {
+  padding-left: 8%;
+}
+
+.mainTitle {
+  font-family: "Red Hat Mono", sans-serif;
+  font-size: 35px;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  font-weight: bold;
+  text-align: right;
+  border-bottom: 3px solid #454545;
+  width: 70%;
+  padding-bottom: 10%;
+}
+
+.slogan__2 {
+  width: 80%;
+  border-left: 10px solid #ffa34d;
+  padding: 8% 0 8% 10%;
+  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-top: 10%;
+}
+
+.mid > p {
+  width: 70%;
+  height: 20%;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12.5px;
+}
+
+.backgroundMain__3 {
+  background-color: black;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.profile__1 {
+  border-right: 10px solid #ffa34d;
+  padding: 2% 30% 2% 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.profile__1_1 {
+  font-family: "Red Hat Mono", sans-serif;
+  font-size: 35px;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  width: 80%;
+  height: 20%;
+}
+
+.profile__1_2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.profile__2,
+.profile__3,
+.profile__4,
+.profile__5,
+.profile__6 {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile__2 {
+  background-image: url(Khang.jpg);
+  background-position: top;
+}
+.profile__3 {
+  background-image: url(Tuan.jpeg);
+  background-position: top;
+}
+.profile__4 {
+  background-image: url(Doan.jpg);
+  background-position: top;
+}
+.profile__5 {
+  background-image: url(Huy.jpg);
+  background-position: top;
+}
+.profile__6 {
+  background-image: url(Nghia.jpg);
+  background-position: top;
+}
+
+ul {
+  list-style: none;
+  color: #ffffff;
+  font-family: "Red Hat Mono", sans-serif;
+  padding: 5% 0 5% 5%;
+}
+
+.profileContent_2,
+.profileContent_3,
+.profileContent_4 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 7%;
+}
+
+footer {
+  font: 25px/1.2 "Zen Kurenaido", sans-serif;
+  text-align: center;
+}
+.profileContent_4{
+  margin-top: 20%;
+}
+.backgroundBottom {
+  background-color: #f2f2f2;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+a.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #ffa34d
+    url("https://thinhweb.com/wp-content/themes/thinhweb/images/cd-top-arrow.svg")
+    no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+a.cd-top.cd-is-visible,
+a.cd-top.cd-fade-out,
+.no-touch a.cd-top:hover {
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+a.cd-top,
+a.cd-top:visited,
+a.cd-top:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+a.cd-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+a.cd-top.cd-fade-out {
+  opacity: 1;
+}

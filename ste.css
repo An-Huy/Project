@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+html {
+  font-family: Times New Roman, Arial, Tahoma, Verdana, Arial Unicode MS,
+    sans-serif;
+  font-size: 62.5%;
+  line-height: 1.7;
+  background: #ffffff;
+  color: #333333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  position: relative;
+  font-size: 1.6rem; /* 16px*/
+}
+
+.white_area_inner {
+  width: 60%;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.formtable01 {
+  width: 90%;
+  margin: 10px auto 20px auto;
+  padding: 0px;
+  text-align: left;
+  clear: both;
+  border-radius: 10px;
+}
+.formtable01 th {
+  width: 95%;
+  display: block;
+  border-top: none;
+  margin: 0px auto;
+  padding: 10px 2%;
+  border-top: none;
+  vertical-align: text-top;
+  background-color: rgb(108, 190, 190);
+  color: #000;
+}
+.formtable01 td {
+  width: 95%;
+  margin: 0px auto;
+  display: block;
+  border-top: none;
+  padding: 20px 2%;
+  line-height: 140%;
+  background-color: #eeeeee;
+}
+
+.formtable01 input[type="text"],
+.formtable01 input[type="email"],
+.formtable01 input[type="tel"],
+.formtable01 textarea {
+  padding: 10px;
+  border: 1px #dddddd solid;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.formtable01 .inputtxt {
+  width: 90%;
+}
+
+.formtable01 .inputtxt_short {
+  width: 30%;
+}
+
+.formtable01 .inputtxt_big {
+  width: 90%;
+}
+
+.submitbtn {
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.submitbtn input {
+  width: 260px;
+  height: 50px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  background: rgb(245, 245, 70);
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submitbtn input:hover {
+  width: 260px;
+  height: 50px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  background: #c1c40e;
+  font-size: 16px;
+  color: #fff;
+}
+#myDIV {
+  width: 90%;
+  background-color: rgb(108, 190, 190);
+  margin-top: 20px;
+  display: none;
+  margin-left: 40px;
+  color: red;
+}
