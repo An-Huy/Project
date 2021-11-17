@@ -59,6 +59,10 @@ form{
     border-bottom: 2px solid #d9d9d9;
 }
 
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
 .i{
 	color: #d9d9d9;
 	display: flex;
@@ -91,7 +95,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #FFA34D;
+	background-color: #ffa34d;
 	transition: .4s;
 }
 
@@ -113,7 +117,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-	color: #FFA34D;
+	color: #ffa34d;
 }
 
 .input-div > div > input{
@@ -145,7 +149,7 @@ a{
 }
 
 a:hover{
-	color: #FFA34D;
+	color: #ffa34d;
 }
 
 .btn{
@@ -155,7 +159,7 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #FFA34D, #fd9d43, #FFA34D);
+	background-image: linear-gradient(to right, #ffa34d, #fca758, #f8ac65);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;
@@ -199,7 +203,7 @@ a:hover{
 	.img{
 		display: none;
 	}
-	
+
 	.login-content{
 		justify-content: center;
 	}
