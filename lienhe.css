@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: brown;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px 10px black;
+    color: cornsilk;
+    padding: 5px;
+    margin-bottom: 40px;
+
+}
+
+.contact p {
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+h1 {
+    border-bottom: 1px solid #ccc;
+}
+
+#icon {
+    border-top: 1px solid #ccc;    
+}
+
+#icon a {
+    color: #DAA520;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 5px;  
+}
+
+.map {
+    width: 300px;
+}
+
+.icon-show h3 {
+    margin-top: 30px;
+}
+
+.icon-show i {
+    width: 50px;
+}
+
+#footer {
+    margin-top: 50px;
+    text-align: center;
+}

@@ -119,3 +119,9 @@ body {
   margin-left: 40px;
   color: red;
 }
+
+.white_area_inner a {
+  padding: 50px 0 100px 0;
+  font-size: 25px;
+  color: blue;
+}
