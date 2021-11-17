@@ -173,6 +173,11 @@ a:hover{
 	background-position: right;
 }
 
+.account{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5rem;
+}
 
 @media screen and (max-width: 1050px){
 	.container{
