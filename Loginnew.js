@@ -17,22 +17,28 @@ inputs.forEach(input => {
 	input.addEventListener("blur", remcl);
 });
 
-function check() {
-	var a = document.forms[0]['code'].value;
-	switch (a)
-	{
-	case "201200392" : window.location("navcco.html"); break;
-	case "201200345" : window.location("navcco.html"); break;
-	case "201200346" : window.location("navcco.html"); break;
-	case "201120348" : window.location("navcco.html"); break;
-	case "150284568" : window.location("navcco.html"); break;
-	case "201345678" : window.location("navcco.html"); break;
-	case "215487937" : window.location("navcco.html"); break;
-	case "201234567" : window.location("navcco.html"); break;
-	case "202012021" : window.location("navcco.html"); break;
-	case "450212345" : window.location("navcco.html"); break;
-	case "101245782" : window.location("navcco.html"); break;
-	case "101231545" : window.location("navcco.html"); break;
-	case "123012147" : window.location("navcco.html"); break;
+// Check - Login
+var CORRECT_USER = 'tuan201200392'
+var CORRECT_PASS = '11012002'
+var inputUsername = document.getElementById('username');
+var inputPassword = document.getElementById('password');
+
+var formLogin = document.getElementById('form-login');
+
+if(formLogin.attachEvent){
+	formLogin.attachEvent('Login', onFormSubmit);
+}
+else {
+	formLogin.attachEventListener('Login', onFormSubmit);
+}
+
+function onFormSubmit(){
+	var username = inputUsername.value;
+	var password = inputPassword.value;
+	if (username == CORRECT_USER && password == CORRECT_PASS){
+		alert('Logged in successfully!');
+	}
+	else {
+		alert('Incorrect account or password!!!')
 	}
 }
