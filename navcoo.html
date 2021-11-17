@@ -67,14 +67,7 @@
       .img {
         padding: 10px 0;
       }
-      @media screen and (max-height: 450px) {
-        .sidenav {
-          padding-top: 15px;
-        }
-        .sidenav a {
-          font-size: 18px;
-        }
-      }
+
       .tentruong {
         font-size: 100px;
         color: cornsilk;
@@ -99,6 +92,17 @@
     </style>
   </head>
   <body>
+    <span
+      style="
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        padding-left: 5px;
+      "
+      onclick="openNav()"
+      >&#9776; <b>Menu</b></span
+    >
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
@@ -125,17 +129,7 @@
       <a href="doimk.html">Đổi mật khẩu</a>
       <a href="Loginnew.html">Đăng xuất</a>
     </div>
-    <span
-      style="
-        font-size: 30px;
-        cursor: pointer;
-        color: white;
-        text-shadow: 3px 3px 3px black;
-        padding-left: 5px;
-      "
-      onclick="openNav()"
-      >&#9776; <b>Menu</b></span
-    >
+
     <div id="main">
       <p class="tentruong">Harvard University</p>
       <div>

@@ -300,8 +300,9 @@ footer {
   padding-bottom: 5%;
 }
 
-a.cd-top {
-  display: inline-block;
+.button_scroll2top
+{
+  display: none;
   height: 40px;
   width: 40px;
   position: fixed;
@@ -310,35 +311,13 @@ a.cd-top {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   text-indent: 100%;
-  white-space: nowrap;
   background: #ffa34d
     url("https://thinhweb.com/wp-content/themes/thinhweb/images/cd-top-arrow.svg")
     no-repeat center 50%;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  transition: opacity 0.3s 0s, visibility 0s 0.3s;
-}
-a.cd-top.cd-is-visible,
-a.cd-top.cd-fade-out,
-.no-touch a.cd-top:hover {
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
-  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
-  transition: opacity 0.3s 0s, visibility 0s 0s;
+    opacity: 0.6;
 }
 
-a.cd-top,
-a.cd-top:visited,
-a.cd-top:hover {
-  color: #cccccc;
-  text-decoration: none;
-}
-
-a.cd-top.cd-is-visible {
-  visibility: visible;
-  opacity: 1;
-}
-a.cd-top.cd-fade-out {
-  opacity: 1;
+.button_scroll2top:hover
+{
+  opacity:1.0;
 }
