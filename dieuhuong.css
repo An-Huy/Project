@@ -22,12 +22,6 @@
     text-decoration: none;
 }
 
-.thanhdieuhuong2{
-    float: right;
-    display: flex;
-    justify-content: right;
-}
-
 .thanhdieuhuong2 nav a{
 padding: 10px;                  /*10+20=30*/
 font-size: 20px;
