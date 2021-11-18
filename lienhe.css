@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+.ct h3 {
+    background-color: brown;
+    color: cornsilk;
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+}
+
 header {
     background-color: brown;
     border-radius: 0 0 10px 10px;
@@ -11,7 +18,6 @@ header {
     color: cornsilk;
     padding: 5px;
     margin-bottom: 40px;
-
 }
 
 .contact p {
@@ -24,7 +30,9 @@ h1 {
 }
 
 #icon {
-    border-top: 1px solid #ccc;    
+    border-top: 1px solid #ccc;  
+    text-align: center;
+    
 }
 
 #icon a {
@@ -38,15 +46,28 @@ h1 {
     width: 300px;
 }
 
-.icon-show h3 {
-    margin-top: 30px;
+
+#icon .icon-show h3 {
+    margin-top: 50px;
+    background-color: brown;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .icon-show i {
     width: 50px;
+
 }
 
 #footer {
-    margin-top: 50px;
+    background-color: brown;
+    color: cornsilk;
+    margin-top: 20px;
     text-align: center;
+}
+
+#footer a{
+    color: #fff;
+    text-decoration: underline;
+    font-size: 18px;
 }

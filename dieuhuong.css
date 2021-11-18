@@ -30,6 +30,7 @@ color: palevioletred;
 font-family:monospace;
 text-decoration: none;
 display: inline-block;
+float: right;
 }
 .thanhdieuhuong2 nav a:hover{
     font-size: 24px;            /*24+6=30*/
@@ -37,5 +38,7 @@ display: inline-block;
     background-color: palevioletred;
     color: white; 
 }
+
+
 
 

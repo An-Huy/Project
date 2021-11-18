@@ -30,7 +30,7 @@ body {
 
 .formtable01 {
   width: 90%;
-  margin: 10px auto 20px auto;
+  margin: 20px auto 20px auto;
   padding: 0px;
   text-align: left;
   clear: both;
@@ -42,7 +42,6 @@ body {
   border-top: none;
   margin: 0px auto;
   padding: 10px 2%;
-  border-top: none;
   vertical-align: text-top;
   background-color: rgb(108, 190, 190);
   color: #000;
@@ -64,7 +63,6 @@ body {
   padding: 10px;
   border: 1px #dddddd solid;
   border-radius: 5px;
-  box-shadow: none;
 }
 
 .formtable01 .inputtxt {
@@ -90,7 +88,6 @@ body {
   height: 50px;
   margin: 10px auto;
   text-align: center;
-  padding: 0;
   border: 0;
   border-radius: 5px;
   background: rgb(245, 245, 70);
