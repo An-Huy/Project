@@ -13,23 +13,35 @@
 			<img src="broad.svg">
 		</div>
 		<div class="login-content">
-			<form action="navcoo.html">
+			<form id="form-login" role="form">
 				<img src="ava.svg">
 				<h2 class="title">Welcome</h2>
-        <div class="input-div pass">
-          <div class="i"> 
-          <i class="fas fa-user"></i>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <h5>Username</h5>
+              <input type="text" class="input" id="username">
+            </div>
+          </div>
+          <div class="input-div pass">
+            <div class="i"> 
+              <i class="fas fa-lock"></i>
           </div>
           <div class="div">
-          <h5>Student code</h5>
-          <input type="text" class="input" name="code">
+            <h5>Password</h5>
+            <input type="password" class="input" id="password">
           </div>
-        </div>
-        <a href="#">You don't have a student ID?</a>
-        <input type="submit" class="btn" value="Login" onclick="check()">
+          </div>
+          <div class="account"> <a href="#">Forgot Password?</a>
+          <a href="SignUp.html">Sign up Account</a>
+          </div>
+          <input type="submit" class="btn" value="Login" onclick="onFormSubmit()">
       </form>
     </div>
   </div>
     <script type="text/javascript" src="Loginnew.js"></script>
 </body>
 </html>
+  
