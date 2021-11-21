@@ -65,22 +65,14 @@
         margin-left: 50px;
       }
 
-      @media screen and (max-height: 450px) {
-        .sidenav {
-          padding-top: 15px;
-        }
-        .sidenav a {
-          font-size: 18px;
-        }
-      }
+
       .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
         width: 80%;
         border-radius: 5px;
         padding-bottom: 100px;
-        height: 650px;
         margin-top: 10px;
+        background: rgba(255, 255, 255, 0.9)
       }
        input[type=text]{
         width: 100%;
@@ -88,8 +80,6 @@
         margin: 5px 0 22px 0;
         display: inline-block;
         border: none;
-        width:100%;
-        padding:15px;
         border-radius:15px;
         box-shadow:4px 4px 10px rgba(0,0,0,0.2);
     }
@@ -108,7 +98,8 @@
     button:hover {
         opacity:1;
     }
-    #content1, #content2{
+    #content1, #content2,
+    #content3, #content4{
         display: none;
     }
     </style>
@@ -117,7 +108,19 @@
     var a = document.forms[0]["email"].value;
     var b = document.forms[0]["reemail"].value;
     var x = document.getElementById("content1");     
-    var y = document.getElementById("content2");    
+    var y = document.getElementById("content2");
+    var z = document.getElementById("content3");
+    var t = document.getElementById("content4");
+    if(a.length=== 0){
+      z.style.display = "block";
+    }else{
+      z.style.display = "none";
+    }
+    if(b.length=== 0){
+      t.style.display = "block";
+    }else{
+      t.style.display = "none";
+    }
     if (a !== b) {
         x.style.display = "block";
     }else{
@@ -132,8 +135,30 @@
         }
     }
     </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "300px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
   </head>
   <body>
+    <span
+      style="
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        padding-left: 5px;
+      "
+      onclick="openNav()"
+      >&#9776; <b>Menu</b></span
+    >
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
@@ -156,24 +181,14 @@
       <a href="#"> Trang chủ</a>
       <a href="thongtincanhan.html">Thông tin cá nhân</a>
       <a href="giaodienchonlop.html">Lịch học</a>
-      <a href="dangkyemail.html">Đăng ký địa chỉ email</a>
+      <a href="dangkyemail.html">Đăng ký email mới</a>
       <a href="doimk.html">Đổi mật khẩu</a>
       <a href="Loginnew.html">Đăng xuất</a>
     </div>
-    <span
-      style="
-        font-size: 30px;
-        cursor: pointer;
-        color: white;
-        text-shadow: 3px 3px 3px black;
-        padding-left: 5px;
-      "
-      onclick="openNav()"
-      >&#9776; <b>Menu</b></span
-    >
+    
     <div id="main">
       <div class="card container-fluid">
-        <h3><b>Đăng ký email</b></h3>
+        <h3 style="text-align: center;"><b>Đăng ký email mới</b></h3>
         <img
           src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Harvard_shield_wreath.svg/1200px-Harvard_shield_wreath.svg.png"
           alt="Avatar"
@@ -189,8 +204,8 @@
           <form action="">
             <div class="container">
               <p>Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
-
               <label for="email"><b>Email </b></label>
+              <p id="content3" style="color: red;">Không để trống email</p>
               <input
                 type="text"
                 placeholder="Nhập Email"
@@ -198,14 +213,15 @@
                 required
               /></br>
                 <label for="email"><b>Nhập lại email </b></label>
+                <p id="content4" style="color: red;">Không để trống email</p>
               <input
                 type="text"
                 placeholder="Nhập lại email"
                 name="reemail"
                 required
               /></br>
-              <p id="content1" style="color: red;">Email do not match!</p>
-              <p id="content2" style="color: red;">Succesfull!</p>
+              <p id="content1" style="color: red;">Email không giống nhau!</p>
+              <p id="content2" style="color: red;">Đăng ký thành công!</p>
               <div class="clearfix">
                 <button type="button" class="signupbtn" onclick="check()">Đăng ký</button>
               </div>
@@ -214,16 +230,5 @@
         </div>
       </div>
     </div>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
-        document.getElementById("main").style.marginLeft = "300px";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
   </body>
 </html>
