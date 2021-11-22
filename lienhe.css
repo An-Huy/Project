@@ -42,8 +42,9 @@ h1 {
     margin: 0 5px;  
 }
 
-.map {
-    width: 300px;
+iframe {
+    width: 90%;
+    height: 250px;
 }
 
 
