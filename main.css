@@ -62,6 +62,7 @@
   text-transform: uppercase;
   text-decoration: none;
   margin: 0 10%;
+  cursor: pointer;
 }
 
 .buttonHeader_1:hover {
