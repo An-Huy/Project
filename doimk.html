@@ -35,7 +35,6 @@
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
         top: 0;
         left: 0;
         background-color: white;
@@ -64,23 +63,13 @@
         font-size: 36px;
         margin-left: 50px;
       }
-
-      @media screen and (max-height: 450px) {
-        .sidenav {
-          padding-top: 15px;
-        }
-        .sidenav a {
-          font-size: 18px;
-        }
-      }
       .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
         width: 80%;
         border-radius: 5px;
-        padding-bottom: 100px;
-        height: 690px;
+        padding-bottom: 100px;       
         margin-top: 5px;
+        background: rgba(255, 255, 255, 0.9)
       }
        input[type=password]{
         width: 100%;
@@ -88,8 +77,6 @@
         margin: 5px 0 22px 0;
         display: inline-block;
         border: none;
-        width:100%;
-        padding:10px;
         border-radius:15px;
         box-shadow:4px 4px 10px rgba(0,0,0,0.2);
     }
@@ -108,7 +95,8 @@
     button:hover {
         opacity:1;
     }
-    #content1, #content2, #content3{
+    #content1, #content2, #content3,
+    #content4,#content5,#content6{
         display: none;
     }
  
@@ -117,10 +105,29 @@
     function check() {
     var a = document.forms[0]["repeat"].value;
     var b = document.forms[0]["pswrepeat"].value;
+    var c = document.forms[0]["psw"].value;
     var x = document.getElementById("content1");     
     var y = document.getElementById("content2");    
     var z = document.getElementById("content3");
-    if(a.length < 8){
+    var t = document.getElementById("content4");
+    var i = document.getElementById("content5");
+    var u = document.getElementById("content6");
+    if(c.length === 0){
+      t.style.display = "block";
+    }else{
+      t.style.display = "none";
+    }
+    if(a.length === 0){
+      i.style.display = "block";
+    }else{
+      i.style.display = "none";
+    }
+    if(b.length === 0){
+      u.style.display = "block";
+    }else{
+      u.style.display = "none";
+    }
+    if(a.length < 6){
         x.style.display = "block";
         return;
     }else{
@@ -133,16 +140,38 @@
         y.style.display = "none";
     }
     if (
-        a.length > 8 &&
-        b.length > 8 &&
+        a.length > 5 &&
+        b.length > 5 &&
         a == b
     ) {
         z.style.display = "block";
         }
     }
     </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "300px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
   </head>
   <body>
+    <span
+      style="
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        padding-left: 5px;
+      "
+      onclick="openNav()"
+      >&#9776; <b>Menu</b></span
+    >
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
@@ -169,20 +198,14 @@
       <a href="doimk.html">Đổi mật khẩu</a>
       <a href="Loginnew.html">Đăng xuất</a>
     </div>
-    <span
-      style="
-        font-size: 30px;
-        cursor: pointer;
-        color: white;
-        text-shadow: 3px 3px 3px black;
-        padding-left: 5px;
-      "
-      onclick="openNav()"
-      >&#9776; <b>Menu</b></span
-    >
+    
     <div id="main">
       <div class="card container-fluid">
+<<<<<<< HEAD
+        <h3 style="text-align: center;"><b>Đổi mật khẩu</b></h3>
+=======
         <h3><b>Đổi mật khẩu</b></h3>
+>>>>>>> 8fb5cd32733b27d153152408ff4205edaa13be60
         <img
           src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Harvard_shield_wreath.svg/1200px-Harvard_shield_wreath.svg.png"
           alt="Avatar"
@@ -197,16 +220,18 @@
         <div class="dangky">
           <form action="">
            <label for="psw"><b>Mật khẩu hiện tại</b></label>
-            <input type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
-            <label for="psw-repeat"><b>Mật khẩu mới</b></label>
-            <input type="password" placeholder="Nhập Mật Khẩu Mới" name="repeat" required>
-
-            <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
-            <input type="password" placeholder="Nhập Lại Mật Khẩu" name="pswrepeat" required>
-            <p id="content1" style="color: red;">The password is too short!</p>
-            <p id="content2" style="color: red;">Passwords do not match!</p>
-            <p id="content3" style="color: red;">Succesfull!</p>
-            <div class="clearfix">
+                  <p id="content4" style="color: red;">Không để trống mật khẩu!</p>
+                  <input type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
+                  <label for="psw-repeat"><b>Mật khẩu mới</b></label>
+                  <p id="content5" style="color: red;">Vui lòng nhập mật khẩu mới!</p>
+                  <input type="password" placeholder="Nhập Mật Khẩu Mới" name="repeat" required>
+                  <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                  <p id="content6" style="color: red;">Vui lòng nhập lại mật khẩu!</p>
+                  <input type="password" placeholder="Nhập Lại Mật Khẩu" name="pswrepeat" required>
+                  <p id="content1" style="color: red;">Mật khẩu phải từ 6-12 ký tự!</p>
+                  <p id="content2" style="color: red;">Mật khẩu không giống nhau!</p>
+                  <p id="content3" style="color: red;">Đổi mật khẩu thành công!</p>
+                  <div class="clearfix">
                 <button type="button" class="signupbtn" onclick="check()">Đổi mật khẩu</button>
               </div>
             </div>
@@ -214,16 +239,5 @@
         </div>
       </div>
     </div>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
-        document.getElementById("main").style.marginLeft = "300px";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
   </body>
 </html>

@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ste.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ste.css" />
     <title>Trợ giúp</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="white_area_inner">
+<<<<<<< HEAD
+      <form id="form" name="form" method="post" action="contactform.php">
+        <table
+          class="formtable01"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          summary="Biểu mẫu hỏi đáp"
+        >
+          <tr>
+            <th>
+              <strong>Họ và tên</strong>&nbsp;<strong
+                class="red"
+                style="color: red"
+                >*</strong
+              >
+            </th>
+            <td>
+              <input
+                type="text"
+                names="name;s"
+                id="name;s"
+                value=""
+                class="inputtxt"
+                placeholder="Vui lòng điền họ tên"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <strong>Email</strong>&nbsp;<strong class="red" style="color: red"
+                >*</strong
+              >
+            </th>
+            <td>
+              <input
+                type="email"
+                name="email;s"
+                id="email;s"
+                value=""
+                class="inputtxt"
+                placeholder="Email"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <strong>Số điện thoại liên hệ</strong>&nbsp;<strong
+                class="red"
+                style="color: red"
+                >*</strong
+              >
+            </th>
+            <td>
+              <input
+                type="tel"
+                name="tel;s"
+                id="tel;s"
+                value=""
+                class="inputtxt"
+                placeholder="Số điện thoại"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Nội dung hỏi đáp</th>
+            <td>
+              <textarea
+                name="comment"
+                id="comment"
+                class="inputtxt_big"
+                rows="20"
+                placeholder="Điền nội dung"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <p>
+          <input name="autoReply" type="checkbox" value="1" /> Nhận mail xác
+          nhận nội dung đã gửi
+        </p>
+        <div id="myDIV">Đã gửi phản hồi!</div>
+        <div class="submitbtn">
+          <p>
+            <input
+              type="button"
+              value="Gửi phản hồi"
+              id="submit"
+              onclick="myFunction()"
+            />
+          </p>
+          <p><input type="reset" value="Về trang chủ" id="submit" /></p>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script>
+=======
         <form id="form" name="form" method="post" action="contactform.php">
             <table class="formtable01" cellpadding="0" cellspacing="0" border="0" summary="Biểu mẫu hỏi đáp">
                 <tr>
@@ -31,19 +129,20 @@
             <p><input name="autoReply" type="checkbox" value="1" />
                 Nhận mail xác nhận nội dung đã gửi</p>
             <div id="myDIV">Đã gửi phản hồi!</div>
-            <div class="submitbtn"><p><input type="button" value="Gửi phản hồi" id="submit" onclick="myFunction()"/></p>
-            <a href="navcoo.html">Về trang chủ</a></div>
+            <div class="submitbtn"><p><input type="button" value="Gửi phản hồi" id="submit" onclick="myFunction()"/></p></div>
+            <a href="navcoo.html">Về trang chủ</a>
         </form>
     </div>
 </body>
 <script>
+>>>>>>> 8fb5cd32733b27d153152408ff4205edaa13be60
     function myFunction() {
-    var x = document.getElementById("myDIV");
-         if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-         x.style.display = "none";
-     }
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
     }
-</script>
+  </script>
 </html>

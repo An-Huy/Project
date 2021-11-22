@@ -63,33 +63,47 @@
         right: 25px;
         font-size: 36px;
         margin-left: 50px;
-         }
-      .thongtin p{
-      font-size: 25px;  
       }
-      .thongtin{
-      margin-top: 50px;  
+      .thongtin p {
+        font-size: 22px;
       }
-      @media screen and (max-height: 450px) {
-        .sidenav {
-          padding-top: 15px;
-        }
-        .sidenav a {
-          font-size: 18px;
-        }
+      .thongtin {
+        margin-top: 50px;
       }
       .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
         width: 80%;
         border-radius: 5px;
         padding-bottom: 100px;
         height: 600px;
         margin-top: 10px;
+        background: rgba(255, 255, 255, 0.9);
       }
     </style>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "300px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
   </head>
   <body>
+    <span
+      style="
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        padding-left: 5px;
+      "
+      onclick="openNav()"
+      >&#9776; <b>Menu</b></span
+    >
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
@@ -112,24 +126,23 @@
       <a href="#"> Trang chủ</a>
       <a href="thongtincanhan.html">Thông tin cá nhân</a>
       <a href="giaodienchonlop.html">Lịch học</a>
-      <a href="dangkyemail.html">Đăng ký địa chỉ email</a>
+      <a href="dangkyemail.html">Đăng ký email mới</a>
       <a href="doimk.html">Đổi mật khẩu</a>
       <a href="Loginnew.html">Đăng xuất</a>
     </div>
-    <span
-      style="
-        font-size: 30px;
-        cursor: pointer;
-        color: white;
-        text-shadow: 3px 3px 3px black;
-        padding-left: 5px;
-      "
-      onclick="openNav()"
-      >&#9776; <b>Menu</b></span
-    >
+
     <div id="main">
       <div class="card container-fluid">
-        <h3 style="text-align: center;font-size: 40px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Thông tin cá nhân</b></h3>
+        <h3
+          style="
+            text-align: center;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+          "
+        >
+          <b>Thông tin cá nhân</b>
+        </h3>
         <img
           src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Harvard_shield_wreath.svg/1200px-Harvard_shield_wreath.svg.png"
           alt="Avatar"
@@ -142,24 +155,23 @@
           <p>Sinh viên</p>
         </div>
         <div class="thongtin">
-          <p>Họ tên sinh viên: Nguyễn Văn A</p>
-          <p>Mã sinh viên: 2012***** </p>
-          <p>Khóa: K61</p>
-          <p>Lớp: CNTT 2</p>
-          <p>Chuyên ngành học: Công nghệ thông tin</p>
+          <p>
+            <span><b>Họ tên sinh viên: </b></span>Nguyễn Văn A
+          </p>
+          <p>
+            <span><b>Mã sinh viên: </b></span> 2012*****
+          </p>
+          <p>
+            <span><b>Khóa: </b></span> K61
+          </p>
+          <p>
+            <span><b>Lớp: </b></span> CNTT 2
+          </p>
+          <p>
+            <span><b>Chuyên ngành học: </b></span> Công nghệ thông tin
+          </p>
         </div>
       </div>
     </div>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
-        document.getElementById("main").style.marginLeft = "300px";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
   </body>
 </html>
