@@ -14,7 +14,7 @@
   background-color: cornflowerblue;
   border: 2px solid black;
   font-size: 20px;
-  float: left;
+  clear: both;
 }
 
 table,
